@@ -1,0 +1,260 @@
+* 
+.body {
+    font-family: "Montserrat", sans-serif;
+}
+.a {
+    text-decoration: none;
+}
+.top__head {
+    background-color: #E1FF8F;
+    width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.top__img {
+    width: 1074px;
+    position: absolute;
+    left: 860px;
+    border-width: 1px;
+    top:9px;
+}
+.top__imgs {
+    width: 35px;
+    height: 35px;
+    padding-top: 69px;
+    margin-left: 156px;
+}
+.top__im {
+    width: 57px;
+    height: 57px;
+    margin-top: 94px;
+    margin-left: 63px;
+}
+.top__imgg {
+    width: 37px;
+    padding-left: 948px;
+}
+.top__imm {
+    width: 83px;
+    padding-left: 1013px;
+    padding-bottom: 148px;
+}
+.spe__title {
+    width: 769px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    vertical-align: middle;
+    margin-left: 120px;
+    color: #000;
+ }
+.header__name {
+    width: 720px;
+    height: 64px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    vertical-align: middle;
+    margin-left: 120px;
+
+}
+.lets {
+    width: 247px;
+    height: 66px;
+    margin-left: 120px;
+    border-radius: 60px;
+    border-width: 1px;
+    padding-top: 16px;
+    padding-right: 28px;
+    padding-bottom: 16px;
+    padding-left: 28px;
+    background: #202027;
+    border: 1px solid #202027;
+}
+.lets:hover {
+    background: #ffffff;
+}
+button {
+   font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 142%;
+    text-align: center;
+    color: #FFFFFF;
+}
+button:hover {
+    color: #000;
+}
+.header__navigation {
+    width: 3219px;
+    height: 37px;
+    border-width: 1px;
+    padding-top: 27px;
+    padding-right: 49px;
+    padding-bottom: 27px;
+    padding-left: 49px;
+    background-image: url(img.html/fr.svg);
+    backdrop-filter: blur(50px)
+
+}
+.top {
+    width: 1440px;
+    background: #202027;
+    padding-top: 96px;
+}   
+.spe__titl {
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    vertical-align: middle;
+    margin-left: 120px;
+    
+}
+.header__names {
+    width: 788px;
+    height: 96px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    vertical-align: middle;
+    color: #FFFFFF;
+    margin-left: 120px;
+}
+.cart__game {
+    max-width: 1201px;
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    gap: 32px;
+    padding-right: 32px;
+    padding-left: 119px;
+}
+
+.top__card {
+    width: 378px;
+    height: 473px;
+    border-radius: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 12.61px 42.25px -7.57px #00000021;
+    margin-bottom: 32px;
+}
+.games {
+    border-radius: 30px;
+}
+.game {
+    padding-right: 32px;
+    padding-bottom: 36px;
+    padding-left: 32px;
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+.top__game {
+    width: 108px;
+    height: 36px;
+    border-radius: 52px;
+    padding-top: 8px;
+    padding-left: 16px;
+    background: #F7F7F7;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    vertical-align: bottom;
+    color: #202027;
+}
+.top__link {
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    vertical-align: middle;
+    color: #202027;
+    text-decoration: none;
+    padding-top: 16px;
+
+}
+.mingame {
+    width: 1440px;
+    rotate: 0 deg;
+    background: #202027;
+    padding-bottom: 144px;
+}
+.mingame__cards {
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 119px;
+    margin-top: 72px;
+}
+.mingame__games {
+    width: 1200px;
+    height: 500px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 20px 67px -12px #00000021;
+    
+}
+.mingame__names {
+    width: 504px;
+    height: 59px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    vertical-align: middle;
+    color: #202027;
+}
+.mingame__try  {
+    width: 457px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #202027;
+    vertical-align: middle;
+}
+.mingame__play {
+    width: 247px;
+    height: 66px;
+    gap: 10px;
+    border-radius: 60px;
+    padding-top: 16px;
+    padding-right: 28px;
+    padding-bottom: 16px;
+    padding-left: 28px;
+    background: #202027;
+} 
+.button {
+    width: 96px;
+    height: 34px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 142%;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.footer {
+    width: 1441px;
+    height: 150px;
+    background: #BDED35;
+} 
+.footer__law {
+    width: 285px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: #000;
+    padding-top: 61px;
+    margin-left: 578px;
+    margin-bottom: 60px;
+}                                                                      
