@@ -5,42 +5,41 @@
 .a {
     text-decoration: none;
 }
-.top__head {
+.head {
     background-color: #E1FF8F;
     width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.top__img {
-    width: 1074px;
+.biges {
     position: absolute;
     left: 860px;
     border-width: 1px;
     top:9px;
 }
-.top__imgs {
+.small {
     width: 35px;
     height: 35px;
     padding-top: 69px;
     margin-left: 156px;
 }
-.top__im {
+.big {
     width: 57px;
     height: 57px;
     margin-top: 94px;
     margin-left: 63px;
 }
-.top__imgg {
+.star {
     width: 37px;
     padding-left: 948px;
 }
-.top__imm {
+.stars {
     width: 83px;
     padding-left: 1013px;
     padding-bottom: 148px;
 }
-.spe__title {
+.title {
     width: 769px;
     font-family: Montserrat;
     font-weight: 700;
@@ -50,7 +49,7 @@
     margin-left: 120px;
     color: #000;
  }
-.header__name {
+.name {
     width: 720px;
     height: 64px;
     font-family: Montserrat;
@@ -88,7 +87,7 @@ button {
 button:hover {
     color: #000;
 }
-.header__navigation {
+.navigation {
     width: 3219px;
     height: 37px;
     border-width: 1px;
@@ -105,7 +104,7 @@ button:hover {
     background: #202027;
     padding-top: 96px;
 }   
-.spe__titl {
+.top__title {
     color: #FFFFFF;
     font-family: Montserrat;
     font-weight: 700;
@@ -115,7 +114,7 @@ button:hover {
     margin-left: 120px;
     
 }
-.header__names {
+.names {
     width: 788px;
     height: 96px;
     font-family: Montserrat;
@@ -126,7 +125,7 @@ button:hover {
     color: #FFFFFF;
     margin-left: 120px;
 }
-.cart__game {
+.top__game {
     max-width: 1201px;
     display: grid;
     grid-template-columns: repeat(12 , 1fr);
@@ -153,7 +152,7 @@ button:hover {
     background: #FFFFFF;
     border-radius: 30px;
 }
-.top__game {
+.game__namber {
     width: 108px;
     height: 36px;
     border-radius: 52px;
