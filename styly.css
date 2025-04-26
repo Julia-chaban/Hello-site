@@ -6,15 +6,16 @@
     text-decoration: none;
 }
 .head {
+    min-width: 1440px;
     background-color: #E1FF8F;
-    width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .biges {
+    width: 749px;
     position: absolute;
-    left: 860px;
+    left: 699px;
     border-width: 1px;
     top:9px;
 }
@@ -41,10 +42,9 @@
 }
 .title {
     width: 769px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 700;
     font-size: 64px;
-    line-height: 100%;
     vertical-align: middle;
     margin-left: 120px;
     color: #000;
@@ -52,7 +52,7 @@
 .name {
     width: 720px;
     height: 64px;
-    font-family: Montserrat;
+    font-family:"Montserrat";
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
@@ -77,7 +77,7 @@
     background: #ffffff;
 }
 button {
-   font-family: Montserrat;
+   font-family: "Montserrat";
     font-weight: 600;
     font-size: 24px;
     line-height: 142%;
@@ -97,7 +97,11 @@ button:hover {
     padding-left: 49px;
     background-image: url(img.html/fr.svg);
     backdrop-filter: blur(50px)
-
+}
+.navigation::-webkit-scrollbar {
+    overflow: hidden;
+    width: 0;
+    
 }
 .top {
     width: 1440px;
@@ -106,10 +110,9 @@ button:hover {
 }   
 .top__title {
     color: #FFFFFF;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 700;
     font-size: 64px;
-    line-height: 100%;
     vertical-align: middle;
     margin-left: 120px;
     
@@ -117,7 +120,7 @@ button:hover {
 .names {
     width: 788px;
     height: 96px;
-    font-family: Montserrat;
+    font-family:"Montserrat" ;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
@@ -130,27 +133,31 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(12 , 1fr);
     gap: 32px;
-    padding-right: 32px;
     padding-left: 119px;
 }
-
 .top__card {
-    width: 378px;
-    height: 473px;
     border-radius: 30px;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     box-shadow: 0px 12.61px 42.25px -7.57px #00000021;
+    margin-bottom: 32px;
+   
+}
+.top__cards {
+    border-radius: 30px;
+    box-shadow: 0px 12.61px 42.25px -7.57px #00000021;
+    background-color: #FFFFFF;
     margin-bottom: 32px;
 }
 .games {
     border-radius: 30px;
 }
 .game {
-    padding-right: 32px;
-    padding-bottom: 36px;
-    padding-left: 32px;
+    padding-right: 40px;
     background: #FFFFFF;
     border-radius: 30px;
+    padding-left: 32px;
+    padding-bottom: 36px;
+    word-break: normal;
 }
 .game__namber {
     width: 108px;
@@ -159,7 +166,7 @@ button:hover {
     padding-top: 8px;
     padding-left: 16px;
     background: #F7F7F7;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 500;
     font-size: 16px;
     vertical-align: bottom;
@@ -168,18 +175,16 @@ button:hover {
 .top__link {
     display: flex;
     flex-direction: column;
-    font-family: inherit;
+    font-family:"Montserrat" ;
     font-weight: 700;
     font-size: 32px;
-    line-height: 100%;
     vertical-align: middle;
     color: #202027;
     text-decoration: none;
-    padding-top: 16px;
+   
 
 }
 .mingame {
-    width: 1440px;
     rotate: 0 deg;
     background: #202027;
     padding-bottom: 144px;
@@ -202,16 +207,15 @@ button:hover {
 .mingame__names {
     width: 504px;
     height: 59px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 700;
     font-size: 48px;
-    line-height: 100%;
     vertical-align: middle;
     color: #202027;
 }
 .mingame__try  {
     width: 457px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
@@ -232,7 +236,7 @@ button:hover {
 .button {
     width: 96px;
     height: 34px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 600;
     font-size: 24px;
     line-height: 142%;
