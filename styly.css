@@ -52,7 +52,11 @@
 .name {
     width: 720px;
     height: 64px;
+<<<<<<< HEAD
     font-family:"Montserrat";
+=======
+    font-family: "Montserrat";
+>>>>>>> 42ad56beeefe3c4f2c83d2b8b51c27c9d7fe1960
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
@@ -97,11 +101,18 @@ button:hover {
     padding-left: 49px;
     background-image: url(img.html/fr.svg);
     backdrop-filter: blur(50px)
+<<<<<<< HEAD
 }
 .navigation::-webkit-scrollbar {
     overflow: hidden;
     width: 0;
     
+=======
+    
+}
+.navigation::-webkit-scrollbar {
+    width: 0;
+>>>>>>> 42ad56beeefe3c4f2c83d2b8b51c27c9d7fe1960
 }
 .top {
     width: 1440px;
@@ -120,7 +131,11 @@ button:hover {
 .names {
     width: 788px;
     height: 96px;
+<<<<<<< HEAD
     font-family:"Montserrat" ;
+=======
+    font-family: "Montserrat";
+>>>>>>> 42ad56beeefe3c4f2c83d2b8b51c27c9d7fe1960
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
@@ -133,6 +148,10 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(12 , 1fr);
     gap: 32px;
+<<<<<<< HEAD
+=======
+    padding-right: 40px;
+>>>>>>> 42ad56beeefe3c4f2c83d2b8b51c27c9d7fe1960
     padding-left: 119px;
 }
 .top__card {
@@ -152,7 +171,12 @@ button:hover {
     border-radius: 30px;
 }
 .game {
+<<<<<<< HEAD
     padding-right: 40px;
+=======
+    padding-bottom: 36px;
+    padding-left: 32px;
+>>>>>>> 42ad56beeefe3c4f2c83d2b8b51c27c9d7fe1960
     background: #FFFFFF;
     border-radius: 30px;
     padding-left: 32px;
@@ -164,6 +188,7 @@ button:hover {
     height: 36px;
     border-radius: 52px;
     padding-top: 8px;
+    padding-bottom: 10px;
     padding-left: 16px;
     background: #F7F7F7;
     font-family: "Montserrat";
@@ -171,18 +196,27 @@ button:hover {
     font-size: 16px;
     vertical-align: bottom;
     color: #202027;
+    text-decoration-line: none;
 }
 .top__link {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     font-family:"Montserrat" ;
+=======
+    font-family: "Montserrat";
+>>>>>>> 42ad56beeefe3c4f2c83d2b8b51c27c9d7fe1960
     font-weight: 700;
     font-size: 32px;
     vertical-align: middle;
     color: #202027;
+<<<<<<< HEAD
     text-decoration: none;
    
 
+=======
+    text-decoration-line: none;
+>>>>>>> 42ad56beeefe3c4f2c83d2b8b51c27c9d7fe1960
 }
 .mingame {
     rotate: 0 deg;
@@ -212,6 +246,7 @@ button:hover {
     font-size: 48px;
     vertical-align: middle;
     color: #202027;
+    
 }
 .mingame__try  {
     width: 457px;
@@ -253,7 +288,7 @@ button:hover {
     width: 285px;
     font-weight: 600;
     font-size: 24px;
-    line-height: 100%;
+    font-family: "Montserrat";
     text-align: center;
     vertical-align: middle;
     color: #000;
