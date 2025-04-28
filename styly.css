@@ -5,61 +5,59 @@
 .a {
     text-decoration: none;
 }
-.top__head {
+.head {
     background-color: #E1FF8F;
-    width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.top__img {
-    width: 1074px;
+.biges {
     position: absolute;
-    left: 860px;
+    left: 756px;
     border-width: 1px;
     top:9px;
 }
-.top__imgs {
+.small {
     width: 35px;
     height: 35px;
     padding-top: 69px;
     margin-left: 156px;
 }
-.top__im {
+.big {
     width: 57px;
     height: 57px;
     margin-top: 94px;
     margin-left: 63px;
 }
-.top__imgg {
+.star {
     width: 37px;
     padding-left: 948px;
 }
-.top__imm {
+.stars {
     width: 83px;
     padding-left: 1013px;
     padding-bottom: 148px;
 }
-.spe__title {
+.title {
     width: 769px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 700;
     font-size: 64px;
-    line-height: 100%;
     vertical-align: middle;
     margin-left: 120px;
     color: #000;
+    word-break: normal;
  }
-.header__name {
+.name {
     width: 720px;
     height: 64px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
     vertical-align: middle;
     margin-left: 120px;
-
+    margin-bottom: 48px;
 }
 .lets {
     width: 247px;
@@ -78,7 +76,7 @@
     background: #ffffff;
 }
 button {
-   font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 600;
     font-size: 24px;
     line-height: 142%;
@@ -88,8 +86,7 @@ button {
 button:hover {
     color: #000;
 }
-.header__navigation {
-    width: 3219px;
+.navigation {
     height: 37px;
     border-width: 1px;
     padding-top: 27px;
@@ -97,28 +94,26 @@ button:hover {
     padding-bottom: 27px;
     padding-left: 49px;
     background-image: url(img.html/fr.svg);
-    backdrop-filter: blur(50px)
+    overflow: hidden;
 
 }
 .top {
-    width: 1440px;
     background: #202027;
     padding-top: 96px;
 }   
-.spe__titl {
+.top__title {
     color: #FFFFFF;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 700;
     font-size: 64px;
-    line-height: 100%;
     vertical-align: middle;
     margin-left: 120px;
     
 }
-.header__names {
+.names {
     width: 788px;
     height: 96px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
@@ -126,7 +121,7 @@ button:hover {
     color: #FFFFFF;
     margin-left: 120px;
 }
-.cart__game {
+.top__game {
     max-width: 1201px;
     display: grid;
     grid-template-columns: repeat(12 , 1fr);
@@ -136,54 +131,53 @@ button:hover {
 }
 
 .top__card {
-    width: 378px;
-    height: 473px;
     border-radius: 30px;
     background: #FFFFFF;
     box-shadow: 0px 12.61px 42.25px -7.57px #00000021;
     margin-bottom: 32px;
+    text-decoration: none;
 }
 .games {
     border-radius: 30px;
 }
 .game {
-    padding-right: 32px;
     padding-bottom: 36px;
     padding-left: 32px;
     background: #FFFFFF;
     border-radius: 30px;
 }
-.top__game {
+.game__namber {
     width: 108px;
     height: 36px;
     border-radius: 52px;
     padding-top: 8px;
+    padding-bottom: 10px;
     padding-left: 16px;
     background: #F7F7F7;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 500;
     font-size: 16px;
     vertical-align: bottom;
     color: #202027;
+    text-decoration: none;
 }
 .top__link {
     display: flex;
     flex-direction: column;
-    font-family: inherit;
+    font-family:"Montserrat" ;
     font-weight: 700;
     font-size: 32px;
-    line-height: 100%;
     vertical-align: middle;
     color: #202027;
     text-decoration: none;
     padding-top: 16px;
+    text-decoration: none;
 
 }
 .mingame {
-    width: 1440px;
-    rotate: 0 deg;
     background: #202027;
     padding-bottom: 144px;
+    padding-top: 46px;
 }
 .mingame__cards {
     gap: 32px;
@@ -203,16 +197,15 @@ button:hover {
 .mingame__names {
     width: 504px;
     height: 59px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 700;
     font-size: 48px;
-    line-height: 100%;
     vertical-align: middle;
     color: #202027;
 }
 .mingame__try  {
     width: 457px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
@@ -231,9 +224,7 @@ button:hover {
     background: #202027;
 } 
 .button {
-    width: 96px;
-    height: 34px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 600;
     font-size: 24px;
     line-height: 142%;
@@ -242,15 +233,14 @@ button:hover {
 
 }
 .footer {
-    width: 1441px;
     height: 150px;
     background: #BDED35;
 } 
 .footer__law {
+    font-family: "Montserrat";
     width: 285px;
     font-weight: 600;
     font-size: 24px;
-    line-height: 100%;
     text-align: center;
     vertical-align: middle;
     color: #000;
