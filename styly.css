@@ -1,4 +1,7 @@
-* 
+*       {
+    margin: 0;
+    padding: 0;
+}
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
@@ -15,32 +18,41 @@ a {
     background-position: center;
     background-size: cover;
 }
+.head__top {
+    height: 710px;
+    }
 .biges {
     position: absolute;
-    left: 756px;
     border-width: 1px;
-    top:9px;
+    right: 0px;
+    left: 763px;
+    top: 0px;
+    position: absolute;
 }
 .small {
     width: 35px;
     height: 35px;
-    padding-top: 69px;
-    margin-left: 156px;
+    top: 69px;
+    left: 156px;
+    position: absolute;
 }
 .big {
     width: 57px;
     height: 57px;
-    margin-top: 94px;
-    margin-left: 63px;
+    top: 94px;
+    left: 63px;
+   position: absolute;
 }
 .star {
     width: 37px;
-    padding-left: 948px;
+    left: 948px;
+    position: absolute;
 }
 .stars {
     width: 83px;
-    padding-left: 1013px;
-    padding-bottom: 148px;
+    left: 1013px;
+    bottom: 148px;
+    position: absolute;
 }
 .title {
     width: 769px;
@@ -50,6 +62,7 @@ a {
     vertical-align: middle;
     color: #000;
     word-break: normal;
+    padding-top: 196px;
  }
 .name {
     width: 720px;
@@ -59,7 +72,7 @@ a {
     font-size: 24px;
     line-height: 32px;
     vertical-align: middle;
-    margin-bottom: 48px;
+    padding-bottom: 48px;
 }
 .lets {
     width: 247px;
@@ -83,7 +96,7 @@ button {
     line-height: 142%;
     text-align: center;
     color: #FFFFFF;
-    padding-bottom: 156px;
+    margin-bottom: 156px;
 }
 button:hover {
     color: #000;
@@ -98,7 +111,7 @@ button:hover {
 }
 .top {
     background: #202027;
-    padding-top: 96px;
+    
 }   
 .top__title {
     color: #FFFFFF;
