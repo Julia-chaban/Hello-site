@@ -23,11 +23,9 @@ a {
     }
 .biges {
     position: absolute;
-    border-width: 1px;
     right: 0px;
-    left: 763px;
     top: 0px;
-    position: absolute;
+    
 }
 .small {
     width: 35px;
@@ -212,10 +210,12 @@ button:hover {
     vertical-align: middle;
     color: #202027;
     text-decoration: none;
-   
-   
+}  
+ .min  {
+    display: none;
+ }
 
-}
+
 .mingame {
     background: #202027;
     padding-bottom: 144px;
