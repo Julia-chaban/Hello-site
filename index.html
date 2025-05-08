@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Документ</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amdisplay=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styly.css">
-  <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.NJgGN_yGIWM.L.W.O/am=AAY/d=0/rs=AN8SPfrTSMIvWAFISYN4u74dPJrX0HgUsw/m=el_main_css"></head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+  rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
-  <body>
-    <div class="head center">
+<body>
+  <div class="head center">
       <div class="head__top">
         <img class="small" src="./img/Star 2.svg" alt="star">
         <img class="big" src="./img/Star 2.svg" alt="star">
@@ -20,6 +18,7 @@
         <a href="#top"><button class="lets">Поехали!</button></a>
         <img class="star" src="./img/Star 5.svg" alt="star">
         <img class="stars" src="./img/Star 4.svg" alt="star">
+        <img class="bigs" src="./img/bigest.svg" alt="star">
         <img class="biges" src="./img/Group 1.svg" alt="Пиктер">
       </div>
     </div>
@@ -95,51 +94,76 @@
     </div>
     <div class="min">
     <div class="mingame center">
-        <h2 class="top__title">Мини-игры</h2>
+        <h2 class="top__titles">Мини-игры</h2>
         <div class="mingame__cards">
         <div id="game1">
         <div class="mingame__games">
-            <p class="mingame__names">Угадай число</p>
+        <div class="mingame__part">
+           <p class="mingame__names">Угадай число</p>
             <p class="mingame__try">Попробуйте угадать случайное число от 1 до 100.</p>
-            <button class="mingame__play">Играть!</button>
+            <a href="#game1">
+            <button class="mingame__play">Играть!</button></a>
+          </div>
+            <img class="mingame__card" src="./img/min1.svg" alt="cart">
         </div>
         </div>
         <div id="game2">
         <div class="mingame__games">
-            <p class="mingame__names">Простая арифметика</p>
-            <p class="mingame__try">Попробуйте решить простые арифметические задачи.</p>
-            <button class="mingame__play">Играть!</button>
+            <img class="mingame__card" src="./img/min2.svg" alt="cart">
+         <div class="mingame__part">
+              <p class="mingame__name">Простая арифметика</p>
+              <p class="mingame__try">Попробуйте решить простые арифметические задачи.</p>
+              <a href="#game2">
+              <button class="mingame__play">Играть!</button></a>
+            </div>
         </div>
         </div>
         <div id="game3">
         <div class="mingame__games">
+        <div class="mingame__part">
             <p class="mingame__names">Переверни текст</p>
             <p class="mingame__try">Попробуй ввести текст, который будет перевернут.</p>
-            <button class="mingame__play">Играть!</button>
-        </div>
-        </div>
-        <div id="game4">
-        <div class="mingame__games">
-            <p class="mingame__names">Камень, ножницы, бумага</p>
-            <p class="mingame__try">Сыграй влярную популярную игру против компьютера.</p>
-            <button class="mingame__play">Играть!</button>
-        </div>
+            <a href="#game3">
+            <button class="mingame__play">Играть!</button></a>
+          </div>
+            <img class="mingame__card" src="./img/min3.svg" alt="cart">
+          </div>
         </div>
         <div id="game5">
+          <div class="mingame__games">
+            <img class="mingame__card" src="./img/min4.svg" alt="cart">
+            <div class="mingame__part">
+              <p class="mingame__names"> Викторина</p>
+              <p class="mingame__try">Отвечайте на вопросы победившими вариантами ответов.</p>
+              <a href="#game5">
+              <button class="mingame__play">Играть!</button></a>
+            </div>
+          </div>
+          </div>
+        <div id="game4">
         <div class="mingame__games">
-            <p class="mingame__names">Простая викторина</p>
-            <p class="mingame__try">Отвечайте на вопросы победившими вариантами ответов.</p>
-            <button class="mingame__play">Играть!</button>
+        <div class="mingame__part">
+            <p class="mingame__name">Камень, ножницы, бумага</p>
+            <p class="mingame__try">Сыграй в популярную игру против компьютера.</p>
+            <a href="#game4">
+            <button class="mingame__play">Играть!</button></a>
+          </div>
+          <img class="mingame__card" src="./img/min5.svg" alt="cart">
         </div>
         </div>
-        <div id="game6">
+       <div id="game6">
         <div class="mingame__games">
-            <p class="mingame__names">Генератор случайных цветов</p>
+          <img class="mingame__card" src="./img/min6.svg" alt="cart">
+          <div class="mingame__part">
+            <p class="mingame__name">Генератор случайных цветов</p>
             <p class="mingame__try">Игра, в которой при нажатии на кнопку фон страницы меняется на случайный.</p>
-            <button class="mingame__play">Играть!</button>
+            <a href="#game6">
+            <button class="mingame__play">Играть!</button></a>
+          </div>
         </div>
         </div>
         </div>
+      </div>
     </div>
   </div>
     <footer class="footer center">
@@ -147,4 +171,4 @@
     </footer>
     <script src="script.js"></script>
   </body>
-  </html>
+</html>
