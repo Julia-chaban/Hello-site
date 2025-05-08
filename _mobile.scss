@@ -1,0 +1,34 @@
+@media(max-width:767px) {
+    .center { 
+        margin: 0;
+        padding: 0;
+    }
+    
+    .top {
+        display: none;
+    }
+    .head__top {
+        height: 648px;
+    }
+    .title {
+        width: 262px;
+        height: 196px;
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .biges {
+        display: none;
+    }
+    .bigs {
+        width: 223px;
+        height: 238px;
+        top: -40.43px;
+        left: 489.81px;
+        position: -108.68 deg;
+        position: absolute;
+    
+    }
+    }
