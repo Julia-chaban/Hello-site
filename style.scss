@@ -1,4 +1,4 @@
-*       {
+*  { 
     margin: 0;
     padding: 0;
 }
@@ -25,7 +25,9 @@ a {
     position: absolute;
     right: 0px;
     top: 0px;
-    
+}
+.big__one {
+    display: none;
 }
 .small {
     width: 35px;
@@ -51,6 +53,9 @@ a {
     left: 1013px;
     bottom: 148px;
     position: absolute;
+}
+.bigs {
+    display: none;
 }
 .title {
     width: 769px;
@@ -94,30 +99,43 @@ button {
     line-height: 142%;
     text-align: center;
     color: #FFFFFF;
-    margin-bottom: 156px;
+   
 }
 button:hover {
     color: #000;
 }
 .navigation {
-    height: 37px;
+    height: 90px;
     border-width: 1px;
-    padding-top: 27px;
-    padding-bottom: 27px;
     background-image: url(img/fr.svg);
     overflow: hidden;
 }
 .top {
-    background: #202027;
-    
-}   
+    background: #202027;   
+} 
+.top__s {
+    width: 584px;
+    height: 584px;
+    top: 945.92px;
+    right: 0;
+    position: absolute;
+}  
 .top__title {
     color: #FFFFFF;
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 64px;
     vertical-align: middle;
-    padding-top: 94px;    
+    padding-top: 94px; 
+}
+.top__titles {
+    color: #FFFFFF;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 64px;
+    vertical-align: middle;
+    padding-top: 96px; 
+    padding-bottom: 72px;
 }
 .names {
     width: 788px;
@@ -151,6 +169,11 @@ button:hover {
     box-shadow: 0px 12.61px 42.25px -7.57px #00000021;
     margin-bottom: 32px;
     text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.top__card:hover {
+    transform: scale(1.05);
+    z-index: 1;
 }
 .top__cards {
     width: 378px;
@@ -160,6 +183,11 @@ button:hover {
     box-shadow: 0px 12.61px 42.25px -7.57px #00000021;
     margin-bottom: 32px;
     text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.top__cards:hover {
+    transform: scale(1.05);
+    z-index: 1;
 }
 .games {
     height: 314px;
@@ -211,25 +239,107 @@ button:hover {
     color: #202027;
     text-decoration: none;
 }  
- .min  {
-    display: none;
- }
-
-
 .mingame {
     background: #202027;
     padding-bottom: 144px;
-    padding-top: 46px;
+   
 }
 .mingame__cards {
     gap: 32px;
     display: flex;
     flex-direction: column;
-    margin-left: 119px;
-    margin-top: 72px;
+    
+    
+}
+.mingame__name {
+    width: 504px;
+    height: 118px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 48px;
+    vertical-align: middle;
+    padding-top:48px ;
+}
+.mingame__name_one {
+    width: 504px;
+    height: 118px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 48px;
+    vertical-align: middle;
+    padding-top:48px ;
+}
+.mingame__part {
+    width: 600px;
+    height: 500px;
+    padding-left: 48px;
+}
+.mingame__parts {
+    min-width: 600px;
+    height: 500px;
+    padding-left: 48px;
+}
+.mingame__parts_to {
+    min-width: 600px;
+    height: 500px;
+    padding-left: 48px;
+}
+.mingame__parts_one {
+    min-width: 600px;
+    height: 500px;
+    padding-left: 48px;
+}
+.mingame__card {
+    display: flex; 
+    width: 600px;
+    height: 500px;
+    border-radius: 30px;
+
 }
 .mingame__games {
-    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    min-width: 1200px;
+    height: 500px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 20px 67px -12px #00000021;
+    
+}
+.mingame__games_one {
+    display: flex;
+    flex-direction: row;
+    min-width: 1200px;
+    height: 500px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 20px 67px -12px #00000021;
+    
+}
+.mingame__game {
+    display: flex;
+    flex-direction: row;
+    min-width: 1200px;
+    height: 500px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 20px 67px -12px #00000021;
+    
+}
+.mingame__game_one {
+    display: flex;
+    flex-direction: row;
+    min-width: 1200px;
+    height: 500px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 20px 67px -12px #00000021;
+    
+}
+.mingame__games_to {
+    display: flex;
+    flex-direction: row;
+    min-width: 1200px;
     height: 500px;
     border-radius: 30px;
     background-color: #FFFFFF;
@@ -244,6 +354,19 @@ button:hover {
     font-size: 48px;
     vertical-align: middle;
     color: #202027;
+    padding-top: 48px;
+   
+}
+.mingame__names_one {
+    width: 504px;
+    height: 59px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 48px;
+    vertical-align: middle;
+    color: #202027;
+    padding-top: 48px;
+   
 }
 .mingame__try  {
     width: 457px;
@@ -253,6 +376,41 @@ button:hover {
     line-height: 32px;
     color: #202027;
     vertical-align: middle;
+    padding-top: 24px;
+    padding-bottom: 36px;
+}
+.mingame__try_one  {
+    width: 457px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #202027;
+    vertical-align: middle;
+    padding-top: 24px;
+    padding-bottom: 36px;
+}
+.mingame__try_to  {
+    width: 457px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #202027;
+    vertical-align: middle;
+    padding-top: 24px;
+    padding-bottom: 36px;
+}
+.mingame__trys  {
+    width: 457px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #202027;
+    vertical-align: middle;
+    padding-top: 24px;
+    padding-bottom: 36px;
 }
 .mingame__play {
     width: 247px;
@@ -265,6 +423,9 @@ button:hover {
     padding-left: 28px;
     background: #202027;
 } 
+.mingame__play:hover {
+    background: #FFFFFF;
+}
 .button {
     font-family: "Montserrat";
     font-weight: 600;
@@ -272,7 +433,7 @@ button:hover {
     line-height: 142%;
     text-align: center;
     color: #FFFFFF;
-
+    padding-left: 48px;
 }
 .footer {
     height: 150px;
@@ -289,4 +450,5 @@ button:hover {
     padding-top: 61px;
     margin-left: 578px;
     margin-bottom: 60px;
-}                                                                      
+}
+@import"mobile";
