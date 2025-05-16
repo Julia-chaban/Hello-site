@@ -1,6 +1,6 @@
 let a = 10;
 alert(a);
-a=20;
+a = 20;
 alert(a);
 
 const firstIphoneYear = 2007;
@@ -20,9 +20,9 @@ alert("Частное"+ (namber1 / namber2));
 let result = 2**5;
 alert(result);
 
-let a = 9;
+let c = 9;
 let b = 2;
-let remainder = a % b;
+let remainder = a % c;
 alert(remainder);
 
 let num = 1;
