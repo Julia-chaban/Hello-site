@@ -104,10 +104,10 @@ if(clientOs === 0) {
     let deviseYear = 2014;
     if(deviseYear >= 2015) {
         if(clientOss == 0) {
-            console.log("Установите облегченную версию приложения для IOS по ссылке:");
+            console.log("Установите наше приложение для IOS по ссылке:");
         }
         else if(clientOss == 1) {
-            console.log("Установите облегченную версию приложения для Android по ссылке:");
+            console.log("Установите наше приложение для Android по ссылке:");
         }
         else {
             console.log("Ошибка.Неизвестная операционная система");
