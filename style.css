@@ -131,14 +131,17 @@ button:hover {
 
 .top {
   background: #202027;
+  position: relative;
+  z-index: 0;
 }
 
 .top__s {
   width: 584px;
   height: 584px;
-  top: 945.92px;
+  top: 0;
   right: 0;
   position: absolute;
+  z-index: -1;
 }
 
 .top__title {
@@ -174,7 +177,8 @@ button:hover {
 }
 
 .top__game {
-  max-width: 1201px;
+  min-width: 1201px;
+  height: 1056px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 32px;
@@ -183,6 +187,15 @@ button:hover {
 
 .top__pisk {
   height: 1056px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.top__pisksi {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .top__pisks {
@@ -190,16 +203,29 @@ button:hover {
 }
 
 .top__card {
-  height: 551px;
+  height: 473px;
   border-radius: 30px;
   background: #FFFFFF;
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.1294117647);
-  margin-bottom: 32px;
   text-decoration: none;
   transition: transform 0.3s ease;
 }
 
 .top__card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.top__card_one {
+  height: 551px;
+  border-radius: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.1294117647);
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.top__card_one:hover {
   transform: scale(1.05);
   z-index: 1;
 }
@@ -221,6 +247,7 @@ button:hover {
 }
 
 .games {
+  width: 378px;
   height: 314px;
   border-radius: 30px;
 }
@@ -230,20 +257,19 @@ button:hover {
   padding-left: 32px;
   background: #FFFFFF;
   border-radius: 30px;
-  padding-right: 32px;
+  overflow: hidden;
 }
 
 .gamer {
+  width: 378px;
   height: 198px;
   border-radius: 30px;
-  padding-right: 32px;
   padding-left: 32px;
 }
 
 .gamers {
   height: 159px;
   border-radius: 30px;
-  padding-right: 32px;
   padding-bottom: 36px;
   padding-left: 32px;
 }
@@ -253,7 +279,6 @@ button:hover {
   height: 36px;
   border-radius: 52px;
   padding-top: 8px;
-  padding-left: 16px;
   background-color: #F7F7F7;
   font-family: "Montserrat";
   font-weight: 500;
@@ -261,6 +286,8 @@ button:hover {
   vertical-align: bottom;
   color: #202027;
   text-decoration: none;
+  padding-left: 16px;
+  margin-top: 32px;
 }
 
 .top__link {
@@ -272,20 +299,33 @@ button:hover {
   vertical-align: middle;
   color: #202027;
   text-decoration: none;
+  padding-top: 16px;
 }
 
-.mingame {
+.top__links {
+  width: 314px;
+  height: 117px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 32px;
+  vertical-align: middle;
+  color: #202027;
+  text-decoration: none;
+  padding-top: 16px;
+}
+
+.min {
   background: #202027;
   padding-bottom: 144px;
 }
 
-.mingame__cards {
+.min__cards {
   gap: 32px;
   display: flex;
   flex-direction: column;
 }
 
-.mingame__name {
+.min__name {
   width: 504px;
   height: 118px;
   font-family: "Montserrat";
@@ -295,7 +335,7 @@ button:hover {
   padding-top: 48px;
 }
 
-.mingame__name_one {
+.min__name_one {
   width: 504px;
   height: 118px;
   font-family: "Montserrat";
@@ -305,38 +345,38 @@ button:hover {
   padding-top: 48px;
 }
 
-.mingame__part {
+.min__part {
   width: 600px;
   height: 500px;
   padding-left: 48px;
 }
 
-.mingame__parts {
-  min-width: 600px;
+.min__parts {
+  width: 600px;
   height: 500px;
   padding-left: 48px;
 }
 
-.mingame__parts_to {
-  min-width: 600px;
+.min__parts_to {
+  width: 600px;
   height: 500px;
   padding-left: 48px;
 }
 
-.mingame__parts_one {
-  min-width: 600px;
+.min__parts_one {
+  width: 600px;
   height: 500px;
   padding-left: 48px;
 }
 
-.mingame__card {
+.min__card {
   display: flex;
   width: 600px;
   height: 500px;
   border-radius: 30px;
 }
 
-.mingame__games {
+.min__games {
   display: flex;
   flex-direction: row;
   min-width: 1200px;
@@ -346,7 +386,7 @@ button:hover {
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.1294117647);
 }
 
-.mingame__games_one {
+.min__games_one {
   display: flex;
   flex-direction: row;
   min-width: 1200px;
@@ -356,7 +396,7 @@ button:hover {
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.1294117647);
 }
 
-.mingame__game {
+.min__game {
   display: flex;
   flex-direction: row;
   min-width: 1200px;
@@ -366,7 +406,7 @@ button:hover {
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.1294117647);
 }
 
-.mingame__game_one {
+.min__game_one {
   display: flex;
   flex-direction: row;
   min-width: 1200px;
@@ -376,7 +416,7 @@ button:hover {
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.1294117647);
 }
 
-.mingame__games_to {
+.min__games_to {
   display: flex;
   flex-direction: row;
   min-width: 1200px;
@@ -386,7 +426,7 @@ button:hover {
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.1294117647);
 }
 
-.mingame__names {
+.min__names {
   width: 504px;
   height: 59px;
   font-family: "Montserrat";
@@ -397,9 +437,8 @@ button:hover {
   padding-top: 48px;
 }
 
-.mingame__names_one {
+.min__names_one {
   width: 504px;
-  height: 59px;
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 48px;
@@ -408,7 +447,7 @@ button:hover {
   padding-top: 48px;
 }
 
-.mingame__try {
+.min__try {
   width: 457px;
   font-family: "Montserrat";
   font-weight: 400;
@@ -420,7 +459,7 @@ button:hover {
   padding-bottom: 36px;
 }
 
-.mingame__try_one {
+.min__try_one {
   width: 457px;
   font-family: "Montserrat";
   font-weight: 400;
@@ -432,7 +471,7 @@ button:hover {
   padding-bottom: 36px;
 }
 
-.mingame__try_to {
+.min__try_to {
   width: 457px;
   font-family: "Montserrat";
   font-weight: 400;
@@ -444,7 +483,7 @@ button:hover {
   padding-bottom: 36px;
 }
 
-.mingame__trys {
+.min__trys {
   width: 457px;
   font-family: "Montserrat";
   font-weight: 400;
@@ -456,7 +495,7 @@ button:hover {
   padding-bottom: 36px;
 }
 
-.mingame__play {
+.min__play {
   width: 247px;
   height: 66px;
   gap: 10px;
@@ -468,7 +507,7 @@ button:hover {
   background: #202027;
 }
 
-.mingame__play:hover {
+.min__play:hover {
   background: #FFFFFF;
 }
 
@@ -536,6 +575,8 @@ button:hover {
     text-align: center;
     vertical-align: middle;
     margin-left: 23.5px;
+    padding-bottom: 36px;
+    line-height: 100%;
   }
   .lets {
     width: 285px;
@@ -543,6 +584,18 @@ button:hover {
     margin-left: 29px;
     padding-top: 9px;
     margin-bottom: 131px;
+  }
+  .star {
+    width: 18px;
+    height: 18px;
+    top: 557px;
+    left: 273px;
+  }
+  .stars {
+    width: 39px;
+    height: 41px;
+    top: 580px;
+    left: 304px;
   }
   .navigation {
     height: 51px;
@@ -559,7 +612,8 @@ button:hover {
     width: 223px;
     height: 238px;
     position: absolute;
-    left: 489px;
+    right: 0px;
+    top: 0px;
   }
   .bigs {
     width: 223px;
@@ -577,9 +631,9 @@ button:hover {
     width: 21px;
     height: 21px;
   }
-  .mingame {
+  .min {
     height: 3740px;
-    padding-bottom: 32px;
+    padding-bottom: 9px;
   }
   .top__titles {
     width: 250px;
@@ -592,59 +646,62 @@ button:hover {
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  .mingame__games {
+  .min__cards {
+    gap: 24px;
+  }
+  .min__games {
     min-width: 343px;
     height: 528px;
     box-shadow: 0px 11.44px 38.34px -6.87px rgba(0, 0, 0, 0.1294117647);
     flex-direction: column-reverse;
   }
-  .mingame__games_one {
+  .min__games_one {
     min-width: 343px;
     height: 567px;
     border-radius: 30px;
     box-shadow: 0px 11.44px 38.34px -6.87px rgba(0, 0, 0, 0.1294117647);
     flex-direction: column-reverse;
   }
-  .mingame__games_to {
+  .min__games_to {
     min-width: 343px;
     height: 606px;
     border-radius: 30px;
     box-shadow: 0px 11.44px 38.34px -6.87px rgba(0, 0, 0, 0.1294117647);
     flex-direction: column-reverse;
   }
-  .mingame__game {
+  .min__game {
     min-width: 343px;
     height: 568px;
     box-shadow: 0px 11.44px 38.34px -6.87px rgba(0, 0, 0, 0.1294117647);
     flex-direction: column;
   }
-  .mingame__game_one {
+  .min__game_one {
     min-width: 343px;
     height: 626px;
     flex-direction: column;
     box-shadow: 0px 11.44px 38.34px -6.87px rgba(0, 0, 0, 0.1294117647);
   }
-  .mingame__part {
-    min-width: 343px;
+  .min__part {
+    width: 343px;
     height: 243px;
     padding-left: 29px;
   }
-  .mingame__parts {
-    min-width: 343px;
+  .min__parts {
+    width: 343px;
     height: 282px;
     padding-left: 29px;
   }
-  .mingame__parts_one {
-    min-width: 343px;
+  .min__parts_one {
+    width: 343px;
     height: 322px;
     padding-left: 29px;
   }
-  .mingame__parts_to {
-    min-width: 343px;
+  .min__parts_to {
+    width: 343px;
     height: 342px;
     padding-left: 29px;
   }
-  .mingame__names {
+  .min__names {
     width: 284px;
     height: 39px;
     font-family: "Montserrat";
@@ -653,19 +710,18 @@ button:hover {
     letter-spacing: 0px;
     vertical-align: middle;
     padding-top: 29px;
-    padding-left: 29px;
   }
-  .mingame__names_one {
+  .min__names_one {
     width: 284px;
     height: 78px;
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 32px;
     vertical-align: middle;
-    padding-left: 29px;
     padding-top: 29px;
+    padding-bottom: 16px;
   }
-  .mingame__name {
+  .min__name {
     width: 284px;
     height: 78px;
     font-family: "Montserrat";
@@ -675,17 +731,16 @@ button:hover {
     vertical-align: middle;
     padding-top: 29px;
   }
-  .mingame__name_one {
+  .min__name_one {
     width: 284px;
     height: 117px;
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 32px;
     vertical-align: middle;
-    padding-left: 29px;
     padding-top: 29px;
   }
-  .mingame__try {
+  .min__try {
     width: 240px;
     height: 40px;
     font-family: "Montserrat";
@@ -693,10 +748,9 @@ button:hover {
     font-size: 16px;
     letter-spacing: 0px;
     vertical-align: middle;
-    padding-left: 29px;
     line-height: 100%;
   }
-  .mingame__try_one {
+  .min__try_one {
     width: 275px;
     height: 40px;
     font-family: "Montserrat";
@@ -704,9 +758,8 @@ button:hover {
     font-size: 16px;
     line-height: 100%;
     vertical-align: middle;
-    padding-left: 29px;
   }
-  .mingame__try_to {
+  .min__try_to {
     width: 285px;
     height: 40px;
     font-family: "Montserrat";
@@ -715,9 +768,8 @@ button:hover {
     line-height: 100%;
     letter-spacing: 0px;
     vertical-align: middle;
-    padding-left: 29px;
   }
-  .mingame__trys {
+  .min__trys {
     width: 285px;
     height: 60px;
     font-family: "Montserrat";
@@ -725,16 +777,15 @@ button:hover {
     font-size: 16px;
     letter-spacing: 0px;
     vertical-align: middle;
-    padding-left: 29px;
     line-height: 100%;
   }
-  .mingame__play {
+  .min__play {
     min-width: 285px;
     height: 55px;
     padding-top: 10px;
     padding-bottom: 32px;
   }
-  .mingame__card {
+  .min__card {
     width: 343px;
     height: 284px;
   }
