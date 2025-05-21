@@ -528,7 +528,6 @@ button:hover {
 
 .footer__law {
   font-family: "Montserrat";
-  width: 285px;
   font-weight: 600;
   font-size: 24px;
   text-align: center;
@@ -540,7 +539,6 @@ button:hover {
   align-items: center;
   text-align: center;
   margin-bottom: 60px;
-  margin-left: 578px;
 }
 
 @media (max-width: 767px) {
