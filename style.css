@@ -33,10 +33,6 @@ a {
   top: 0px;
 }
 
-.big__one {
-  display: none;
-}
-
 .small {
   width: 35px;
   height: 35px;
@@ -95,6 +91,11 @@ a {
 .lets {
   width: 247px;
   height: 66px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 142%;
+  text-align: center;
   border-radius: 60px;
   border-width: 1px;
   padding-top: 16px;
@@ -586,6 +587,12 @@ button:hover {
     margin-left: 29px;
     padding-top: 9px;
     margin-bottom: 131px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
   }
   .star {
     width: 18px;
