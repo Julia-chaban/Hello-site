@@ -1,6 +1,5 @@
 *  { 
     margin: 0;
-    padding: 0;
 }
 .center {
     padding-left: calc(50% - 600px);
@@ -17,14 +16,20 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
 }
 .head__top {
-    height: 710px;
+   height: 710px;
+   
     }
 .biges {
     position: absolute;
     right: 0px;
     top: 0px;
+    
+}
+.big__one {
+    display: none;
 }
 .small {
     width: 35px;
