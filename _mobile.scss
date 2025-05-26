@@ -9,9 +9,7 @@
     .center {
         padding-right: 16px;
     }
-    .top {
-        display: none;
-    }
+   
     .head__top {
         height: 648px;
        
@@ -116,6 +114,9 @@
         padding-top: 48px;
         padding-bottom: 48px;
 }
+    .top {
+        display: none;
+    }
     .min__cards {
         gap: 24px;
     }
@@ -169,7 +170,7 @@
         padding-left: 29px;
     }
      .min__parts_to {
-        width: 343px;
+       
         height: 342px;
         padding-left: 29px;
     }
