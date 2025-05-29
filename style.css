@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
 }
 
 .center {
@@ -95,6 +94,11 @@ a {
 .lets {
   width: 247px;
   height: 66px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 142%;
+  text-align: center;
   border-radius: 60px;
   border-width: 1px;
   padding-top: 16px;
@@ -358,7 +362,6 @@ button:hover {
 }
 
 .min__parts_to {
-  width: 600px;
   height: 500px;
   padding-left: 48px;
 }
@@ -410,7 +413,6 @@ button:hover {
   display: flex;
   flex-direction: row;
   min-width: 1200px;
-  height: 500px;
   border-radius: 30px;
   background-color: #FFFFFF;
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.1294117647);
@@ -420,7 +422,6 @@ button:hover {
   display: flex;
   flex-direction: row;
   min-width: 1200px;
-  height: 500px;
   border-radius: 30px;
   background-color: #FFFFFF;
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.1294117647);
@@ -542,16 +543,13 @@ button:hover {
 }
 
 @media (max-width: 767px) {
-  * {
+  * body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
   .center {
-    padding-left: 16px;
     padding-right: 16px;
-  }
-  .top {
-    display: none;
   }
   .head__top {
     height: 648px;
@@ -586,6 +584,12 @@ button:hover {
     margin-left: 29px;
     padding-top: 9px;
     margin-bottom: 131px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
   }
   .star {
     width: 18px;
@@ -607,16 +611,6 @@ button:hover {
     background-image: url(./img/fr1.svg);
     overflow: hidden;
   }
-  .biges {
-    display: none;
-  }
-  .big__one {
-    width: 223px;
-    height: 238px;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
   .bigs {
     width: 223px;
     height: 238px;
@@ -629,6 +623,14 @@ button:hover {
     width: 35px;
     height: 35px;
   }
+  .biges {
+    display: none;
+  }
+  .big__one {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+  }
   .small {
     width: 21px;
     height: 21px;
@@ -636,6 +638,7 @@ button:hover {
   .min {
     height: 3740px;
     padding-bottom: 9px;
+    padding-left: 16px;
   }
   .top__titles {
     width: 250px;
@@ -647,6 +650,13 @@ button:hover {
     vertical-align: middle;
     padding-top: 48px;
     padding-bottom: 48px;
+  }
+  .top {
+    display: none;
+  }
+  .min__card {
+    width: 343px;
+    height: 284px;
   }
   .min__cards {
     gap: 24px;
@@ -666,7 +676,6 @@ button:hover {
   }
   .min__games_to {
     min-width: 343px;
-    height: 606px;
     border-radius: 30px;
     box-shadow: 0px 11.44px 38.34px -6.87px rgba(0, 0, 0, 0.1294117647);
     flex-direction: column-reverse;
@@ -679,7 +688,6 @@ button:hover {
   }
   .min__game_one {
     min-width: 343px;
-    height: 626px;
     flex-direction: column;
     box-shadow: 0px 11.44px 38.34px -6.87px rgba(0, 0, 0, 0.1294117647);
   }
@@ -699,7 +707,6 @@ button:hover {
     padding-left: 29px;
   }
   .min__parts_to {
-    width: 343px;
     height: 342px;
     padding-left: 29px;
   }
@@ -751,6 +758,8 @@ button:hover {
     letter-spacing: 0px;
     vertical-align: middle;
     line-height: 100%;
+    padding-top: 16px;
+    padding-bottom: 32px;
   }
   .min__try_one {
     width: 275px;
@@ -760,6 +769,8 @@ button:hover {
     font-size: 16px;
     line-height: 100%;
     vertical-align: middle;
+    padding-top: 16px;
+    padding-bottom: 32px;
   }
   .min__try_to {
     width: 285px;
@@ -770,6 +781,8 @@ button:hover {
     line-height: 100%;
     letter-spacing: 0px;
     vertical-align: middle;
+    padding-top: 16px;
+    padding-bottom: 32px;
   }
   .min__trys {
     width: 285px;
@@ -787,12 +800,16 @@ button:hover {
     padding-top: 10px;
     padding-bottom: 32px;
   }
-  .min__card {
-    width: 343px;
-    height: 284px;
+  button {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 142%;
+    text-align: center;
   }
   .footer {
     height: 100px;
+    padding-left: 16px;
   }
   .footer__law {
     width: 190px;

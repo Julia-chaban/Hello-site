@@ -1,6 +1,5 @@
 *  { 
     margin: 0;
-    padding: 0;
 }
 .center {
     padding-left: calc(50% - 600px);
@@ -17,14 +16,17 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
 }
 .head__top {
-    height: 710px;
+   height: 710px;
+   
     }
 .biges {
     position: absolute;
     right: 0px;
     top: 0px;
+    
 }
 .big__one {
     display: none;
@@ -80,6 +82,11 @@ a {
 .lets {
     width: 247px;
     height: 66px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 142%;
+    text-align: center;
     border-radius: 60px;
     border-width: 1px;
     padding-top: 16px;
@@ -316,7 +323,6 @@ button:hover {
     padding-left: 48px;
 }
 .min__parts_to {
-    width: 600px;
     height: 500px;
     padding-left: 48px;
 }
@@ -366,7 +372,6 @@ button:hover {
     display: flex;
     flex-direction: row;
     min-width: 1200px;
-    height: 500px;
     border-radius: 30px;
     background-color: #FFFFFF;
     box-shadow: 0px 20px 67px -12px #00000021;
@@ -376,7 +381,6 @@ button:hover {
     display: flex;
     flex-direction: row;
     min-width: 1200px;
-    height: 500px;
     border-radius: 30px;
     background-color: #FFFFFF;
     box-shadow: 0px 20px 67px -12px #00000021;
