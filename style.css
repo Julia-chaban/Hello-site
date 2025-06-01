@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 .center {
@@ -23,7 +24,9 @@ a {
 }
 
 .head__top {
-  height: 710px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .biges {
@@ -65,12 +68,9 @@ a {
   position: absolute;
 }
 
-.bigs {
-  display: none;
-}
-
 .title {
   width: 769px;
+  height: 156px;
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 64px;
@@ -88,7 +88,6 @@ a {
   font-size: 24px;
   line-height: 32px;
   vertical-align: middle;
-  padding-bottom: 48px;
 }
 
 .lets {
@@ -107,6 +106,7 @@ a {
   padding-left: 28px;
   background: #202027;
   border: 1px solid #202027;
+  margin-top: 48px;
 }
 
 .lets:hover {
@@ -546,13 +546,13 @@ button:hover {
   * body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
   }
   .center {
     padding-right: 16px;
+    padding-left: 16px;
   }
   .head__top {
-    height: 648px;
+    align-items: center;
   }
   .title {
     width: 262px;
@@ -562,7 +562,6 @@ button:hover {
     font-size: 40px;
     text-align: center;
     vertical-align: middle;
-    margin-left: 40.5px;
     padding-top: 147px;
   }
   .name {
@@ -575,7 +574,6 @@ button:hover {
     text-align: center;
     vertical-align: middle;
     margin-left: 23.5px;
-    padding-bottom: 36px;
     line-height: 100%;
   }
   .lets {
@@ -590,6 +588,7 @@ button:hover {
     line-height: 142%;
     letter-spacing: 0%;
     text-align: center;
+    margin-top: 36px;
   }
   .star {
     width: 18px;
@@ -638,7 +637,6 @@ button:hover {
   .min {
     height: 3740px;
     padding-bottom: 9px;
-    padding-left: 16px;
   }
   .top__titles {
     width: 250px;
@@ -809,7 +807,6 @@ button:hover {
   }
   .footer {
     height: 100px;
-    padding-left: 16px;
   }
   .footer__law {
     width: 190px;
