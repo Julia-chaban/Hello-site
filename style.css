@@ -58,6 +58,7 @@ a {
 .star {
   width: 37px;
   left: 948px;
+  top: 538px;
   position: absolute;
 }
 
@@ -107,6 +108,7 @@ a {
   background: #202027;
   border: 1px solid #202027;
   margin-top: 48px;
+  margin-bottom: 156px;
 }
 
 .lets:hover {
@@ -589,12 +591,13 @@ button:hover {
     letter-spacing: 0%;
     text-align: center;
     margin-top: 36px;
+    margin-bottom: 131px;
   }
   .star {
     width: 18px;
     height: 18px;
     top: 557px;
-    left: 273px;
+    left: 237px;
   }
   .stars {
     width: 39px;
