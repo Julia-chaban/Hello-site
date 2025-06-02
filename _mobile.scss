@@ -39,10 +39,8 @@
     .lets {
         width: 285px;
         height: 55px;
-        margin-left: 29px;
         padding-top: 9px;
-        margin-bottom: 131px;
-        font-family: Montserrat;
+        font-family: "Montserrat";
         font-weight: 600;
         font-size: 16px;
         line-height: 142%;
@@ -91,7 +89,7 @@
         top: 0px;
         right: 0px;
         position: absolute;
-
+        
     }
     .small {
         width: 21px;
@@ -117,7 +115,7 @@
         display: none;
     }
     .min__card {
-        width: 343px;
+        width: auto;
         height: 284px;
      }
     .min__cards {
@@ -156,28 +154,38 @@
 
     
     .min__part {
-        width: 343px;
+        width: auto;
         height: 243px;
         padding-left: 29px;
+        padding-right: 29px;
+        display: flex;
+        flex-direction: column;
     }
     .min__parts {
-        width: 343px;
+        width: auto;
         height: 282px;
         padding-left: 29px;
+        padding-right: 29px;
+        display: flex;
+        flex-direction: column;
     }
      .min__parts_one {
-        width: 343px;
+        width: auto;
         height: 322px;
         padding-left: 29px;
+        padding-right: 29px;
+        display: flex;
+        flex-direction: column;
     }
      .min__parts_to {
-       
         height: 342px;
         padding-left: 29px;
+        padding-right: 29px;
+        display: flex;
+        flex-direction: column;
     }
     .min__names {
         width: 284px;
-        height: 39px;
         font-family: "Montserrat";
         font-weight: 700;
         font-size: 32px;
@@ -188,7 +196,6 @@
     }
     .min__names_one {
         width: 284px;
-        height: 78px;
         font-family: "Montserrat";
         font-weight: 700;
         font-size: 32px;
@@ -198,7 +205,6 @@
     }
     .min__name {
         width: 284px;
-        height: 78px;
         font-family: "Montserrat";
         font-weight: 700;
         font-size: 32px;
@@ -208,7 +214,6 @@
     }
     .min__name_one {
         width: 284px;
-        height: 117px;
         font-family: "Montserrat";
         font-weight: 700;
         font-size: 32px;
@@ -217,7 +222,6 @@
     }
     .min__try {
         width: 240px;
-        height: 40px;
         font-family: "Montserrat";
         font-weight: 400;
         font-size: 16px;
@@ -229,7 +233,6 @@
     }
     .min__try_one {
         width: 275px;
-        height: 40px;
         font-family: "Montserrat";
         font-weight: 400;
         font-size: 16px;
@@ -240,8 +243,7 @@
 
     }
     .min__try_to {
-       width: 285px;
-        height: 40px;
+        width: 285px;
         font-family: "Montserrat";
         font-weight: 400;
         font-size: 16px;
@@ -254,7 +256,6 @@
     }
     .min__trys {
         width: 285px;
-        height: 60px;
         font-family: "Montserrat";
         font-weight: 400;
         font-size: 16px;
