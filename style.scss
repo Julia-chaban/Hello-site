@@ -51,6 +51,7 @@ a {
 .star {
     width: 37px;
     left: 948px;
+    top: 538px;
     position: absolute;
 }
 .stars {
@@ -78,7 +79,7 @@ a {
     font-size: 24px;
     line-height: 32px;
     vertical-align: middle;
-   
+    margin-top: 24px;
 }
 .lets {
     width: 247px;
@@ -97,6 +98,7 @@ a {
     background: #202027;
     border: 1px solid #202027;
     margin-top: 48px;
+    margin-bottom: 156px;
 }
 .lets:hover {
     background: #ffffff;
@@ -298,7 +300,6 @@ button:hover {
 }
 .min__name {
     width: 504px;
-    height: 118px;
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 48px;
@@ -307,7 +308,6 @@ button:hover {
 }
 .min__name_one {
     width: 504px;
-    height: 118px;
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 48px;
@@ -338,7 +338,7 @@ button:hover {
     width: 600px;
     height: 500px;
     border-radius: 30px;
-
+    object-fit: cover;
 }
 .min__games {
     display: flex;
@@ -390,7 +390,6 @@ button:hover {
 }
 .min__names {
     width: 504px;
-    height: 59px;
     font-family: "Montserrat";
     font-weight: 700;
     font-size: 48px;
