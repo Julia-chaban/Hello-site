@@ -46,4 +46,42 @@ function generateTask() {
     }
    }
 
+   
+function flipText() {
+let inputText = prompt("Введите текст для переворота:");
+let flippedText = inputText.split("").reverse().join("");
+alert("Перевернутый текст:\n" + flippedText);
+}
+    
 
+
+const quiz = [
+           {
+               question: "Какой цвет неба?",
+               options: ["1. Красный", "2. Синий", "3. Зеленый"],
+               correctAnswer: 2 // номер правильного ответа
+           },
+           {
+               question: "Сколько дней в неделе?",
+               options: ["1. Шесть", "2. Семь", "3. Восемь"],
+               correctAnswer: 2
+           },
+           {
+               question: "Сколько у человека пальцев на одной руке?",
+               options: ["1. Четыре", "2. Пять", "3. Шесть"],
+               correctAnswer: 2
+           }
+       ];
+    function startQuiz() {
+        let score = 0;
+        quiz.forEach(q => {
+    let question = q.question + "\n\n" + q.options.join("\n") + "\n\nВаш ответ:";
+    let userAnswer = prompt(question);
+    userAnswer = Number(userAnswer);
+            if (userAnswer === q.correctAnswer) {
+                score ++;
+            }
+        });
+        alert(`Вы ответили правильно на ${score} из ${quiz.length} вопросов.`);
+    } 
+   
