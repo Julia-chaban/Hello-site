@@ -85,3 +85,41 @@ const quiz = [
         alert(`Вы ответили правильно на ${score} из ${quiz.length} вопросов.`);
     } 
    
+    // Массив возможных выборов
+const choices = ["камень", "ножницы", "бумага"];
+
+// Функция для генерации случайного выбора компьютера
+function computerChoice() {
+    return choices[Math.floor(Math.random() * choices.length)];
+}
+
+// Функция для определения победителя
+function determineWinner(playerChoice, compChoice) {
+    if (playerChoice === compChoice) {
+        return "Ничья!";
+    } else if (
+        (playerChoice === "камень" && compChoice === "ножницы") ||
+        (playerChoice === "ножницы" && compChoice === "бумага") ||
+        (playerChoice === "бумага" && compChoice === "камень")
+    ) {
+        return "Вы победили!";
+    } else {
+        return "Вы проиграли!";
+    }
+}
+
+
+function playGame() {
+  let playerChoice = prompt("Ваш ход: выберите камень, ножницы или бумагу").trim().toLowerCase();
+    if (!choices.includes(playerChoice)) {
+        alert("Недопустимый выбор. Игра остановлена.");
+        return;
+    }
+    let compChoice = computerChoice();
+    let result = determineWinner(playerChoice, compChoice);
+    alert(`
+    Ваш выбор: ${playerChoice}
+    Компьютер: ${compChoice}
+    Результат: ${result}
+    `);
+}
