@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Показать/свернуть заголовок</title>
+    <h1 id="header">Заголовок текста</h1>
+    <button id="toggleButton">Скрыть</button>
+  
+    <title>Изменение цвета текста</title>
+    <p id="textParagraph">Это текст, цвет которого изменится при нажатии на кнопку.</p>
+    <button id="changeColorButton">Изменить цвет</button>
+   
+    <title>Изменение текста заголовка</title>
+    <h1 id="heading">Исходный текст заголовка</h1>
+    <button id="changeTextButton">Изменить текст</button>
+    
+    <title>Изменение текста элементов</title>
+    <p class="description">Текст описания 1</p>
+    <span class="description">Текст описания 2</span>
+    <div class="description">Текст описания 3</div>
+
+   
+    <title>Изменение текста элементов</title>
+    <p class="intro">Вступительный текст</p>
+    <p class="description">Описание товара 1</p>
+    <p class="description">Описание товара 2</p>
+    <p class="info">Дополнительная информация</p>
+    <p class="description">Описание товара 3</p>
+
+    <title>Добавление нового элемента</title>
+    <button id="addButton">Добавить элемент</button>
+
+   
+    <title>Удаление элемента</title>
+    <p class="intro">Вступительный текст</p>
+    <p class="description">Описание товара 1</p>
+    <p class="description">Описание товара 2</p>
+    <p class="info">Дополнительная информация</p>
+    <p class="description">Описание товара 3</p>
+    <button id="deleteButton">Удалить элемент</button>
+
+    <script src="">
+        document.addEventListener('DOMContentLoaded', function() {
+    const heading = document.querySelector('#heading');
+    const changeTextBtn = document.querySelector('#changeTextButton');
+    changeTextBtn.addEventListener('click', function() {
+        heading.textContent = 'Привет, мир!';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+   const descriptions = document.querySelectorAll('.description');
+    descriptions.forEach(description => {
+        description.textContent = 'Измененный текст';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+   const descriptions = document.querySelectorAll('.description');
+    descriptions.forEach(description => {
+        description.textContent = 'Новый текст';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+   const addButton = document.querySelector('#addButton');
+    addButton.addEventListener('click', function() {
+    const newParagraph = document.createElement('p');
+        newParagraph.textContent = 'Новый абзац';
+document.body.appendChild(newParagraph);
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const deleteButton = document.querySelector('#deleteButton');
+    deleteButton.addEventListener('click', function() {
+      const firstDescription = document.querySelector('.description');
+    if (firstDescription) {
+            firstDescription.remove();
+        }
+    });
+});
+    </script>
+</body>
+</html>
+
+

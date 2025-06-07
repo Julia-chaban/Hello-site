@@ -3,21 +3,22 @@ function startGame1() {
     let targetNamber = Math.floor(Math.random() * 100) + 1;
     while (true) {
         let quees = prompt("Угадай число от 1 до 100.");
-        quees = Number(quees);
-        if (quees === targetNamber) {
-            alert("Поздравляю , ты угадал число.");
-            break;
+       if (quees === null) {
+            alert("Игра завершена! Начните играть снова.");
+            return;
         }
-        else if (quees < targetNamber) {
+         quees = Number(quees);
+         if (quees === targetNamber) {
+            alert("Поздравляю! Ты угадал число.");
+            break;
+         } else if (quees < targetNamber) {
             alert("Больше! Попробуй еще раз.");
         }
         else {
             alert("Меньше! Попробуй еще раз.");
-           
-        }
-}
-   
-}
+     }
+    }
+   }
 
 function runQuiz() {
 const operations = ['+', '-', '*', '/'];
@@ -59,7 +60,7 @@ const quiz = [
            {
                question: "Какой цвет неба?",
                options: ["1. Красный", "2. Синий", "3. Зеленый"],
-               correctAnswer: 2 // номер правильного ответа
+               correctAnswer: 2 
            },
            {
                question: "Сколько дней в неделе?",
@@ -85,15 +86,11 @@ const quiz = [
         alert(`Вы ответили правильно на ${score} из ${quiz.length} вопросов.`);
     } 
    
-    // Массив возможных выборов
+    
 const choices = ["камень", "ножницы", "бумага"];
-
-// Функция для генерации случайного выбора компьютера
 function computerChoice() {
     return choices[Math.floor(Math.random() * choices.length)];
 }
-
-// Функция для определения победителя
 function determineWinner(playerChoice, compChoice) {
     if (playerChoice === compChoice) {
         return "Ничья!";
@@ -122,4 +119,15 @@ function playGame() {
     Компьютер: ${compChoice}
     Результат: ${result}
     `);
+}
+
+
+function getRandomRgb() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+        return `rgb(${r}, ${g}, ${b})`;
+}
+function changeColor() {
+    document.body.style.backgroundColor = getRandomRgb();
 }
