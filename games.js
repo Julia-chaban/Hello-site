@@ -107,7 +107,12 @@ function determineWinner(playerChoice, compChoice) {
 
 
 function playGame() {
-  let playerChoice = prompt("Ваш ход: выберите камень, ножницы или бумагу").trim().toLowerCase();
+  let playerChoice = prompt("Ваш ход: выберите камень, ножницы или бумагу");
+    if(playerChoice === null) {
+        alert("Игра отменена.");
+        return;
+    }
+    playerChoice = playerChoice.trim().toLocaleLowerCase();
     if (!choices.includes(playerChoice)) {
         alert("Недопустимый выбор. Игра остановлена.");
         return;
@@ -129,6 +134,6 @@ function getRandomRgb() {
         return `rgb(${r}, ${g}, ${b})`;
 }
 function changeBlockColor() {
-    const block = document.querySelector("min");
-    document.body.style.backgroundColor = getRandomRgb();
+    const block = document.querySelector(".min");
+    block.style.backgroundColor = getRandomRgb();
 }
