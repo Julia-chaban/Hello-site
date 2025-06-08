@@ -136,4 +136,10 @@ function getRandomRgb() {
 function changeBlockColor() {
     const block = document.querySelector(".min");
     block.style.backgroundColor = getRandomRgb();
+}   
+function endGame() {
+    const block = document.querySelector(".min");
+    block.style.backgroundColor = "";
+    alert("Игра завершена! Время истекло.");
 }
+setTimeout(endGame, 100000);
