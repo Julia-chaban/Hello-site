@@ -128,6 +128,7 @@ function getRandomRgb() {
     const b = Math.floor(Math.random() * 256);
         return `rgb(${r}, ${g}, ${b})`;
 }
-function changeColor() {
+function changeBlockColor() {
+    const block = document.querySelector("min");
     document.body.style.backgroundColor = getRandomRgb();
 }
