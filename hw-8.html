@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    </head>
+    <body>
     <title>Показать/свернуть заголовок</title>
     <h1 id="header">Заголовок текста</h1>
     <button id="toggleButton">Скрыть</button>
@@ -39,7 +41,28 @@
     <p class="description">Описание товара 3</p>
     <button id="deleteButton">Удалить элемент</button>
 
-    <script src="">
+    <script>
+
+        const button = document.querySelector('button');
+        const h1 = document.querySelector('h1');
+
+        button.addEventListener('click', () => {
+        if (h1.style.display === 'none') {
+             h1.style.display = 'block';
+        } else {
+             h1.style.display = 'none';
+  }
+});
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const paragraph = document.querySelector('#textParagraph');
+    const changeColorBtn = document.querySelector('#changeColorButton');
+    changeColorBtn.addEventListener('click', function() {
+       paragraph.style.color = 'blue';
+    });
+});
+
+  
         document.addEventListener('DOMContentLoaded', function() {
     const heading = document.querySelector('#heading');
     const changeTextBtn = document.querySelector('#changeTextButton');
@@ -80,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
     </script>
-</body>
+    </body>
 </html>
 
 
