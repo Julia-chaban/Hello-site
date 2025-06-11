@@ -59,11 +59,16 @@ while (true) {
 
    
 function flipText() {
-let inputText = prompt("Введите текст для переворота:");
+    while(true) {
+let inputText = prompt("Введите текст для переворота.");
+if (inputText === null) {
+    alert("Игра завершена.");
+    break;
+}
 let flippedText = inputText.split("").reverse().join("");
 alert("Перевернутый текст:\n" + flippedText);
 }
-    
+}    
 
 
 const quiz = [
@@ -126,15 +131,16 @@ function determineWinner(playerChoice, compChoice) {
 
 
 function playGame() {
+    while(true) {
   let playerChoice = prompt("Ваш ход: выберите камень, ножницы или бумагу");
     if(playerChoice === null) {
-        alert("Игра отменена.");
-        return;
+        alert("Игра завершена.");
+        break;
     }
     playerChoice = playerChoice.trim().toLocaleLowerCase();
     if (!choices.includes(playerChoice)) {
         alert("Недопустимый выбор. Игра остановлена.");
-        return;
+        break;
     }
     let compChoice = computerChoice();
     let result = determineWinner(playerChoice, compChoice);
@@ -144,8 +150,8 @@ function playGame() {
     Результат: ${result}
     `);
 }
-
-
+}
+let clicksCounter = 0;
 function getRandomRgb() {
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
@@ -155,10 +161,15 @@ function getRandomRgb() {
 function changeBlockColor() {
     const block = document.querySelector(".min");
     block.style.backgroundColor = getRandomRgb();
+    clicksCounter ++;
+    if(clicksCounter >= 10) {
+        endGame();
+    }
 }   
 function endGame() {
     const block = document.querySelector(".min");
     block.style.backgroundColor = "";
-    alert("Игра завершена! Время истекло.");
-}
-setTimeout(endGame, 100000);
+     alert("Игра завершена!");
+    clicksCounter = 0;
+ }
+
