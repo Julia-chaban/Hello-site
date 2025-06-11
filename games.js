@@ -3,21 +3,22 @@ function startGame1() {
     let targetNamber = Math.floor(Math.random() * 100) + 1;
     while (true) {
         let quees = prompt("Угадай число от 1 до 100.");
-        quees = Number(quees);
-        if (quees === targetNamber) {
-            alert("Поздравляю , ты угадал число.");
-            break;
+       if (quees === null) {
+            alert("Игра завершена! Начните играть снова.");
+            return;
         }
-        else if (quees < targetNamber) {
+         quees = Number(quees);
+         if (quees === targetNamber) {
+            alert("Поздравляю! Ты угадал число.");
+            break;
+         } else if (quees < targetNamber) {
             alert("Больше! Попробуй еще раз.");
         }
         else {
             alert("Меньше! Попробуй еще раз.");
-           
-        }
-}
-   
-}
+     }
+    }
+   }
 
 function runQuiz() {
 const operations = ['+', '-', '*', '/'];
@@ -35,31 +36,46 @@ function generateTask() {
         task: task,
         answer: eval(task)
     };
-} 
+}
+while (true) {
     const {task , answer} = generateTask();
     const userAnswer = prompt(`Решите задачу: ${task}`);
-    if (parseFloat(userAnswer) === answer) {
-        alert("Верно! Отличная работа!");
+    if (userAnswer === null) {
+        alert("Игра завершена.");
+        break;
+    } 
+    const parsedUserAnswer = parseFloat(userAnswer);
+    if(isNaN(parsedUserAnswer)) {
+         alert("Неправильно.Попытайтесь снова");
+         continue;
+    }
+    if(parsedUserAnswer === answer) {
+        alert("Верно.Отличная работа!");
     } else {
-        alert(`Неправильно.Правильный ответ:${answer}`);
-        
+       alert(`Неправильно. Правильный ответ:${answer}`);
+    }   
     }
    }
 
    
 function flipText() {
-let inputText = prompt("Введите текст для переворота:");
+    while(true) {
+let inputText = prompt("Введите текст для переворота.");
+if (inputText === null) {
+    alert("Игра завершена.");
+    break;
+}
 let flippedText = inputText.split("").reverse().join("");
 alert("Перевернутый текст:\n" + flippedText);
 }
-    
+}    
 
 
 const quiz = [
            {
                question: "Какой цвет неба?",
                options: ["1. Красный", "2. Синий", "3. Зеленый"],
-               correctAnswer: 2 // номер правильного ответа
+               correctAnswer: 2 
            },
            {
                question: "Сколько дней в неделе?",
@@ -73,27 +89,32 @@ const quiz = [
            }
        ];
     function startQuiz() {
+        let totalScore = 0;
+    while(true) {
         let score = 0;
-        quiz.forEach(q => {
-    let question = q.question + "\n\n" + q.options.join("\n") + "\n\nВаш ответ:";
+        for(let i = 0; i < 3; i ++) {
+         const randomQuestionIndex = Math.floor(Math.random() * quiz.length);
+         const q = quiz[randomQuestionIndex];
+    let question = q.question + "\n\n" + q.options.join("\n") + "\n\nВаш ответ.";
     let userAnswer = prompt(question);
+    if(userAnswer === null) {
+        alert("Игра завершена.");
+        return;
+    }
     userAnswer = Number(userAnswer);
-            if (userAnswer === q.correctAnswer) {
-                score ++;
-            }
-        });
+    if(userAnswer === q.correctAnswer) {
+       score ++;
+    }
+    }
+        totalScore += score;
         alert(`Вы ответили правильно на ${score} из ${quiz.length} вопросов.`);
-    } 
-   
-    // Массив возможных выборов
+    }   
+}
+    
 const choices = ["камень", "ножницы", "бумага"];
-
-// Функция для генерации случайного выбора компьютера
 function computerChoice() {
     return choices[Math.floor(Math.random() * choices.length)];
 }
-
-// Функция для определения победителя
 function determineWinner(playerChoice, compChoice) {
     if (playerChoice === compChoice) {
         return "Ничья!";
@@ -110,10 +131,16 @@ function determineWinner(playerChoice, compChoice) {
 
 
 function playGame() {
-  let playerChoice = prompt("Ваш ход: выберите камень, ножницы или бумагу").trim().toLowerCase();
+    while(true) {
+  let playerChoice = prompt("Ваш ход: выберите камень, ножницы или бумагу");
+    if(playerChoice === null) {
+        alert("Игра завершена.");
+        break;
+    }
+    playerChoice = playerChoice.trim().toLocaleLowerCase();
     if (!choices.includes(playerChoice)) {
         alert("Недопустимый выбор. Игра остановлена.");
-        return;
+        break;
     }
     let compChoice = computerChoice();
     let result = determineWinner(playerChoice, compChoice);
@@ -123,3 +150,26 @@ function playGame() {
     Результат: ${result}
     `);
 }
+}
+let clicksCounter = 0;
+function getRandomRgb() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+        return `rgb(${r}, ${g}, ${b})`;
+}
+function changeBlockColor() {
+    const block = document.querySelector(".min");
+    block.style.backgroundColor = getRandomRgb();
+    clicksCounter ++;
+    if(clicksCounter >= 10) {
+        endGame();
+    }
+}   
+function endGame() {
+    const block = document.querySelector(".min");
+    block.style.backgroundColor = "";
+     alert("Игра завершена!");
+    clicksCounter = 0;
+ }
+
