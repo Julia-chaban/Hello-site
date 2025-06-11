@@ -36,14 +36,24 @@ function generateTask() {
         task: task,
         answer: eval(task)
     };
-} 
+}
+while (true) {
     const {task , answer} = generateTask();
     const userAnswer = prompt(`Решите задачу: ${task}`);
-    if (parseFloat(userAnswer) === answer) {
-        alert("Верно! Отличная работа!");
+    if (userAnswer === null) {
+        alert("Игра завершена.");
+        break;
+    } 
+    const parsedUserAnswer = parseFloat(userAnswer);
+    if(isNaN(parsedUserAnswer)) {
+         alert("Неправильно.Попытайтесь снова");
+         continue;
+    }
+    if(parsedUserAnswer === answer) {
+        alert("Верно.Отличная работа!");
     } else {
-        alert(`Неправильно.Правильный ответ:${answer}`);
-        
+       alert(`Неправильно. Правильный ответ:${answer}`);
+    }   
     }
    }
 
@@ -74,18 +84,27 @@ const quiz = [
            }
        ];
     function startQuiz() {
+        let totalScore = 0;
+    while(true) {
         let score = 0;
-        quiz.forEach(q => {
-    let question = q.question + "\n\n" + q.options.join("\n") + "\n\nВаш ответ:";
+        for(let i = 0; i < 3; i ++) {
+         const randomQuestionIndex = Math.floor(Math.random() * quiz.length);
+         const q = quiz[randomQuestionIndex];
+    let question = q.question + "\n\n" + q.options.join("\n") + "\n\nВаш ответ.";
     let userAnswer = prompt(question);
+    if(userAnswer === null) {
+        alert("Игра завершена.");
+        return;
+    }
     userAnswer = Number(userAnswer);
-            if (userAnswer === q.correctAnswer) {
-                score ++;
-            }
-        });
+    if(userAnswer === q.correctAnswer) {
+       score ++;
+    }
+    }
+        totalScore += score;
         alert(`Вы ответили правильно на ${score} из ${quiz.length} вопросов.`);
-    } 
-   
+    }   
+}
     
 const choices = ["камень", "ножницы", "бумага"];
 function computerChoice() {
